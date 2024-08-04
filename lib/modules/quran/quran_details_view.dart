@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:islamic/modules/quran/quran_view.dart';
+
 class QuranDetailsView extends StatefulWidget {
   static const String routeName = "QuranDetails";
    const QuranDetailsView({super.key});
