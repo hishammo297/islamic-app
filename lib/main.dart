@@ -2,11 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:islamic/core/application_theme_manger.dart';
 import 'package:islamic/layout/layout_view.dart';
+import 'package:islamic/modules/hadeth/hadeth_view.dart';
 import 'package:islamic/modules/quran/quran_details_view.dart';
 import 'package:islamic/modules/splash/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
