@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:islamic/modules/hadeth/hadeth_details_view.dart';
 class HadethView extends StatefulWidget {
   const HadethView({super.key});
 
@@ -31,6 +32,11 @@ class _HadethViewState extends State<HadethView> {
         Expanded(
           child: ListView.builder(itemBuilder: (context, index) => InkWell(
             onTap: (){
+              Navigator.pushNamed(
+                  context,
+                  HadethDetailsView.routeName,
+                  arguments: dataList[index],
+              );
 
             },
             child : Padding(
